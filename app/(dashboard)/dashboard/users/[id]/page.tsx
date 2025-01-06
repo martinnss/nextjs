@@ -1,7 +1,14 @@
 import React from 'react'
 
+interface Props {
+  params: {
+    id: string
+  }
+}
+
+
 //                              id pq lo pusimos entre []
-const page = ({params}:{params: {id:string} }) => {
+const page = ({params}:Props) => {
     const {id} = params;
 
   return (
